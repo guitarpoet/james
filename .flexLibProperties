@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="net.guitarpoet.james.ViewflowEvent"/>
+<classEntry path="net.guitarpoet.james.Viewflow"/>
+<classEntry path="net.guitarpoet.james.ViewflowConfiguration"/>
+<classEntry path="net.guitarpoet.james.events.UniversalMessageEvent"/>
+<classEntry path="net.guitarpoet.james.utils.ListUtils"/>
+<classEntry path="net.guitarpoet.james.State"/>
+<classEntry path="net.guitarpoet.james.utils.PropertyUtils"/>
+<classEntry path="net.guitarpoet.james.Port"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>
