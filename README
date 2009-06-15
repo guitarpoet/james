@@ -1,0 +1,23 @@
+== Overview ==
+
+This is a simple view flow for flex based on Cairngorm.
+
+It is very easy to explain with all the concepts in flex. In the flex, every view for the application can be a state.The states of the application, or the states of the components.
+
+You can use code to change the states.
+
+But, how the states flows? When to initialize a state and when to finalize a state? Which state to jump to?
+
+It all depends on your code. Not visible to other people. You have to draw a graph to explain, and sometimes you can't remember them either.
+
+james comes to help. james keeps all the state and flow configurations together. It uses cairngorm's universal event dispatcher to broadcast events so you can hook your action to initialize and finalize your state. Every step depends on your configuration and your actions.
+
+And the xml can easily transformed from or to a graph.
+
+Let all your application's state management be handle by james, and you application will be more flexible.
+
+Of course, you have to know cairngorm first.
+
+== Developer(s) ==
+
+Jack <guitarpoet@gmail.com>
