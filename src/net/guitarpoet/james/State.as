@@ -90,6 +90,10 @@ package net.guitarpoet.james {
 			return inits[name] as Port; 
 		}
 		
+		public function getExitPort(name : String) : Port {
+			return exits[name] as Port;
+		}
+		
 		protected function getPorts(obj : Object) : Array {
 			var ps : Array = [];
 			for(var p : String in obj){

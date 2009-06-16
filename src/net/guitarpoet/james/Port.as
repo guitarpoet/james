@@ -36,7 +36,12 @@ package net.guitarpoet.james {
 			if(!nextStateName || nextStateName == "" 
 				|| !nextPortName || nextPortName == "")
 				return null;
+			// If the state is a flow, then port into its inner state.
 			var flow : Viewflow = state is Viewflow ? state as Viewflow : state.flow;
+			if(!nextStateName || nextStateName == ""){
+				// If no state name, port to parent's exit port
+				return state.flow.getExitPort(nextPortName);
+			}
 			if(!flow.getState(nextStateName)){
 				trace("Can't find the next state.");
 				return null;

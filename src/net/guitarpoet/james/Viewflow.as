@@ -48,6 +48,12 @@ package net.guitarpoet.james {
 				state.populate(s, this);
 				addState(state);
 			}
+			
+			for each(var f : * in node.states.flow) {
+				var flow : Viewflow = new Viewflow();
+				flow.populate(f, this);
+				addState(flow);
+			}
 			return this;
 		}
 	}

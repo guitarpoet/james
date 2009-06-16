@@ -12,5 +12,15 @@ package net.guitarpoet.james {
 			flow = new Viewflow();
 			flow.populate(xml, null);	
 		}
+		
+		public function get currentActiveState() : State {
+			if(!flow)
+				return null;
+			var s : State = flow.currentState;
+			while(s is Viewflow){
+				s = Viewflow(s).currentState;
+			}
+			return s;
+		}
 	}
 }
